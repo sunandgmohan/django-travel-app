@@ -19,7 +19,7 @@ pipeline {
                             rm -rf /home/ubuntu/Djangodemo && \
                             mkdir /home/ubuntu/Djangodemo && \
                             cd /home/ubuntu/Djangodemo && \
-                            git clone git@github.com:sunandgmohan/django-travel-app.git && \
+                            git clone https://github.com/sunandgmohan/django-travel-app.git && \
                             cd /home/ubuntu/Djangodemo/django-travel-app.git && \
                             docker build -t myapp . && \
                           
