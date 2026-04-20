@@ -17,7 +17,8 @@ pipeline {
                         ssh -A -o StrictHostKeyChecking=no ubuntu@52.205.98.7 \
                             "set -e && \
                             rm -rf /home/ubuntu/Djangodemo && \
-                            cd /home/ubuntu/Djangodemo
+                            mkdir /home/ubuntu/Djangodemo && \
+                            cd /home/ubuntu/Djangodemo && \
                             git clone git@github.com:sunandgmohan/django-travel-app.git && \
                             cd /home/ubuntu/Djangodemo/django-travel-app.git && \
                             docker build -t myapp . && \
