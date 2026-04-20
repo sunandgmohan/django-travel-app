@@ -23,7 +23,7 @@ pipeline {
                             cd /home/ubuntu/Djangodemo/django-travel-app && \
                             docker build -t myapp . && \
                           
-                            docker build -d -p 7000:8000 myapp"
+                            docker run -d -p 7000:8000 myapp"
                     '''
                 }
             }
