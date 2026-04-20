@@ -20,7 +20,7 @@ pipeline {
                             mkdir /home/ubuntu/Djangodemo && \
                             cd /home/ubuntu/Djangodemo && \
                             git clone https://github.com/sunandgmohan/django-travel-app.git && \
-                            cd /home/ubuntu/Djangodemo/django-travel-app.git && \
+                            cd /home/ubuntu/Djangodemo/django-travel-app && \
                             docker build -t myapp . && \
                           
                             docker build -d -p 7000:8000 myapp"
